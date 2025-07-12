@@ -36,7 +36,7 @@ A Python script that provides basic folder protection on Windows systems using f
 
 
 
-1\. \*\*Create a folder\*\* manually (e.g., `TestFolder` on Desktop)
+1\. \*\*Create a folder\*\* manually (e.g., `TestFolder` on Desktop, or your file name and also to remembre to chnage code folder location path)
 
 2\. \*\*Run the script\*\*:
 
