@@ -104,7 +104,7 @@ Edit the `your\_folder` variable in the script to change target folder:
 
 ```python
 
-your\_folder = r"C:\\Users\\chanu\\OneDrive\\Desktop\\TestFolder"
+your\_folder = r"C:\\Users\\user\\OneDrive\\Desktop\\TestFolder"
 
 ```
 
