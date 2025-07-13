@@ -34,7 +34,7 @@ A simple, educational Python tool that provides basic folder locking and hiding 
 
 
 
-Run the script
+3. Run the script
 
 bash
 Copy
@@ -46,6 +46,8 @@ l → Lock folder
 
 u → Unlock folder
 
+STEP 4
+
 Enter password when prompted.
 
 Note: Password is visible in the folder name (for demo/learning only).
@@ -55,31 +57,40 @@ Note: Password is visible in the folder name (for demo/learning only).
 Renames folder to:
 FolderName_locked_password
 
+STEP 5
+
 Hides the folder using:
 attrib +H
 
+STEP 6
 Removes user permissions using:
 icacls /deny Users:F
+
+STEP 6
 
 🔓 Unlock Process:
 Grants user permissions back:
 icacls /grant Users:F
 
+STEP 7
+
 Unhides the folder using:
 attrib -H
+
+STEP 8
 
 Renames folder back to original name
 
 ⚠️ Important Notes
 For learning purposes only.
 
-Password is stored visibly in folder name and in plain text files in some versions.
+* Password is stored visibly in folder name and in plain text files in some versions.
 
-Not suitable for real-world sensitive data protection.
+* Not suitable for real-world sensitive data protection.
 
-Knowledgeable users can bypass this easily.
+* Knowledgeable users can bypass this easily.
 
-For actual encryption, consider tools like BitLocker, VeraCrypt, etc.
+* For actual encryption, consider tools like BitLocker, VeraCrypt, etc.
 
 🛠️ Configuration
 Update the folder path in folder_locker.py:
