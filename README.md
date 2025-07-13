@@ -1,119 +1,97 @@
-\# Folder Locker
+# 🗄️ Folder Locker – Python Script for Basic Folder Protection (Windows)
 
+A simple, educational Python tool that provides basic folder locking and hiding functionality using Windows commands and file system operations.
 
+---
 
-A Python script that provides basic folder protection on Windows systems using file system operations and Windows commands.
+ ✨ Features
 
+- 🔐 **Rename Protection:** Appends a password to the folder name
+- 👁️‍🗨️ **Hide Folder:** Uses Windows `attrib` command to make folders invisible
+- 🚫 **Permission Control:** Removes access permissions with `icacls` (requires admin)
+- 💻 **Simple CLI Interface:** Easy-to-use lock/unlock commands
 
+---
+ ⚙️ Requirements
 
-\## Features
+- Windows OS
+- Python 3.x
+- Administrator privileges (for full protection)
 
+---
 
+ 🚀 How to Use
 
-\- \*\*Rename Protection\*\*: Renames folders with password suffix
+1. **Create a folder manually**  
+   Example:  
+   `C:\Users\YourName\OneDrive\Desktop\TestFolder`
 
-\- \*\*Hide Folder\*\*: Uses Windows `attrib` command to hide folders
+2. **Edit the script folder path**  
+   Open `folder_locker.py` and update:
 
-\- \*\*Permission Control\*\*: Removes user access permissions (requires admin rights)
+   ```python
+   your_folder = r"C:\Users\YourName\OneDrive\Desktop\TestFolder"
 
-\- \*\*Simple Interface\*\*: Easy lock/unlock commands
 
 
+Run the script
 
-\## Requirements
+bash
+Copy
+Edit
+python folder_locker.py
+Choose an option:
 
+l → Lock folder
 
+u → Unlock folder
 
-\- Windows OS
+Enter password when prompted.
 
-\- Python 3.x
+Note: Password is visible in the folder name (for demo/learning only).
 
-\- Administrator privileges (recommended for full protection)
+📖 How It Works
+🔒 Lock Process:
+Renames folder to:
+FolderName_locked_password
 
+Hides the folder using:
+attrib +H
 
+Removes user permissions using:
+icacls /deny Users:F
 
-\## Usage
+🔓 Unlock Process:
+Grants user permissions back:
+icacls /grant Users:F
 
+Unhides the folder using:
+attrib -H
 
+Renames folder back to original name
 
-1\. \*\*Create a folder\*\* manually (e.g., `TestFolder` on Desktop, or your file ,folder name and also to remembre to chnage code folder location path)
+⚠️ Important Notes
+For learning purposes only.
 
-2\. \*\*Run the script\*\*:
+Password is stored visibly in folder name and in plain text files in some versions.
 
-&nbsp;  ```cmd
+Not suitable for real-world sensitive data protection.
 
-&nbsp;  python folder\_locker.py
+Knowledgeable users can bypass this easily.
 
-&nbsp;  ```
+For actual encryption, consider tools like BitLocker, VeraCrypt, etc.
 
-3\. \*\*Choose option\*\*:
+🛠️ Configuration
+Update the folder path in folder_locker.py:
 
-&nbsp;  - `l` - Lock folder
+python
+Copy
+Edit
+your_folder = r"C:\Users\YourName\OneDrive\Desktop\TestFolder"
 
-&nbsp;  - `u` - Unlock folder
 
-4\. \*\*Enter password\*\* when prompted
+📄 License
+This project is provided for educational and personal learning use only.
+No warranty or responsibility is provided for misuse.
 
-
-
-\## How It Works
-
-
-
-1\. \*\*Lock Process\*\*:
-
-&nbsp;  - Renames folder like this
-`foldername\_locked\_password`
-
-&nbsp;  - Hides the folder using `attrib +H`
-
-&nbsp;  - Denies user access with `icacls` (requires admin)
-
-
-
-2\. \*\*Unlock Process\*\*:
-
-&nbsp;  - Restores access permissions
-
-&nbsp;  - Unhides the folder
-
-&nbsp;  - Renames back to original name
-
-
-
-\## Important Notes
-
-
-
-⚠️ \*\*This is for educational purposes only\*\*
-
-\- Password is visible in folder name
-
-\- Not suitable for sensitive data protection
-
-\- Can be bypassed by knowledgeable users
-
-\- Use proper encryption tools for real security needs
-
-
-
-\## Configuration
-
-
-
-Edit the `your\_folder` variable in the script to change target folder:
-
-```python
-
-your\_folder = r"C:\\Users\\user\\OneDrive\\Desktop\\TestFolder"
-
-```
-
-
-
-\## License
-
-
-
-This project is for educational purposes and learning file system operations.
-
+   
