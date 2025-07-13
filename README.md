@@ -62,7 +62,8 @@ A Python script that provides basic folder protection on Windows systems using f
 
 1\. \*\*Lock Process\*\*:
 
-&nbsp;  - Renames folder to `foldername\_locked\_password`
+&nbsp;  - Renames folder like this
+`foldername\_locked\_password`
 
 &nbsp;  - Hides the folder using `attrib +H`
 
