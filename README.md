@@ -46,7 +46,7 @@ l → Lock folder
 
 u → Unlock folder
 
-STEP 4
+4. STEP 4
 
 Enter password when prompted.
 
@@ -57,27 +57,27 @@ Note: Password is visible in the folder name (for demo/learning only).
 Renames folder to:
 FolderName_locked_password
 
-STEP 5
+5. STEP 5
 
 Hides the folder using:
 attrib +H
 
-STEP 6
+6. STEP 6
 Removes user permissions using:
 icacls /deny Users:F
 
-STEP 6
+7. STEP 7
 
 🔓 Unlock Process:
 Grants user permissions back:
 icacls /grant Users:F
 
-STEP 7
+8. STEP 8
 
 Unhides the folder using:
 attrib -H
 
-STEP 8
+9. STEP 9
 
 Renames folder back to original name
 
