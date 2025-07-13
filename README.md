@@ -62,11 +62,12 @@ u → Unlock folder
  Hides the folder using:
  attrib +H
 
-6. STEP 6
-  Removes user permissions using:
-  icacls /deny Users:F
+6. STEP 6 
 
-7. STEP 7
+   Removes user permissions using:
+   icacls /deny Users:F
+
+8. STEP 7
 
  🔓 Unlock Process:
  Grants user permissions back:
