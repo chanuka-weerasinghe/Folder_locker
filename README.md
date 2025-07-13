@@ -48,64 +48,64 @@ u → Unlock folder
 
 4. STEP 4
 
-Enter password when prompted.
+  Enter password when prompted.
 
-Note: Password is visible in the folder name (for demo/learning only).
+  Note: Password is visible in the folder name (for demo/learning only).
 
-📖 How It Works
-🔒 Lock Process:
-Renames folder to:
-FolderName_locked_password
+  📖 How It Works
+  🔒 Lock Process:
+  Renames folder to:
+  FolderName_locked_password
 
 5. STEP 5
 
-Hides the folder using:
-attrib +H
+ Hides the folder using:
+ attrib +H
 
 6. STEP 6
-Removes user permissions using:
-icacls /deny Users:F
+  Removes user permissions using:
+  icacls /deny Users:F
 
 7. STEP 7
 
-🔓 Unlock Process:
-Grants user permissions back:
-icacls /grant Users:F
+ 🔓 Unlock Process:
+ Grants user permissions back:
+ icacls /grant Users:F
 
 8. STEP 8
 
-Unhides the folder using:
-attrib -H
-
+ Unhides the folder using:
+ attrib -H
+ 
 9. STEP 9
 
-Renames folder back to original name
+ Renames folder back to original name
 
 ⚠️ Important Notes
-For learning purposes only.
+ For learning purposes only.
 
-* Password is stored visibly in folder name and in plain text files in some versions.
+  * Password is stored visibly in folder name and in plain text files in some versions.
 
-* Not suitable for real-world sensitive data protection.
+  * Not suitable for real-world sensitive data protection.
+  
+  * Knowledgeable users can bypass this easily.
 
-* Knowledgeable users can bypass this easily.
-
-* For actual encryption, consider tools like BitLocker, VeraCrypt, etc.
+  * For actual encryption, consider tools like BitLocker, VeraCrypt, etc.
 
 🛠️ Configuration
-Update the folder path in folder_locker.py:
+  Update the folder path in folder_locker.py:
 
-python
-Copy
-Edit :
+  python
+  Copy
+  Edit :
 
-``` 
-your_folder = r"C:\Users\YourName\OneDrive\Desktop\TestFolder"
-```
+  ``` 
+  your_folder = r"C:\Users\YourName\OneDrive\Desktop\TestFolder"
+  ```
 
 
 📄 License
-This project is provided for educational and personal learning use only.
-No warranty or responsibility is provided for misuse.
+  This project is provided for educational and personal learning use only.
+   No warranty or responsibility is provided for misuse.
 
    
