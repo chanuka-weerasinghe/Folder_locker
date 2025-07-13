@@ -86,8 +86,11 @@ Update the folder path in folder_locker.py:
 
 python
 Copy
-Edit
+Edit :
+
+``` 
 your_folder = r"C:\Users\YourName\OneDrive\Desktop\TestFolder"
+```
 
 
 📄 License
